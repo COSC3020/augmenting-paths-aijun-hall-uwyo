@@ -32,3 +32,19 @@ accordingly.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+<hr>
+
+While loop with shift: Visiting each node at least once
+
+$O(V)$
+
+For each neighbor of the current node, we loop for all edges to check them:
+
+$O(E)$
+
+In the worst case, we will need to visit every node before reaching the end node.
+When visiting a node, we check all of its outgoing edges, and therefore the
+total amount of runtime is proportional to the number of nodes and the number of edges:
+
+$\Theta(V + E)$
